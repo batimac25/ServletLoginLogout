@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.login.httpsession.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.login.httpsession.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logoutservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ProfileServlet</servlet-name>
+		<servlet-class>com.login.httpsession.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/profileservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>com.login.httpsession.HomeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/homeservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>LoginCheck</servlet-name>
+		<servlet-class>com.login.httpsession.LoginCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginCheck</servlet-name>
+		<url-pattern>/logincheck</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>IndexCheck</servlet-name>
+		<servlet-class>com.login.httpsession.IndexCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexCheck</servlet-name>
+		<url-pattern>/indexcheck</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>indexcheck</welcome-file>
+	</welcome-file-list>
+</web-app>
